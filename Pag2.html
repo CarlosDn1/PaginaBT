@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+  <div class="container-fluid">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page">Pagina BT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Cuenta</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fondo
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#" onclick="FondoColor('white')">Blanco</a></li>
+            <li><a class="dropdown-item" href="#" onclick="FondoColor('oscuro')">Oscuro</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" onclick="FondoImagen()">Imagen</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PaginaContacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="carruselcontenedor" id="Carrusel1">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/agente1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fade</h5>
+          <p>Agente iniciadora de Turquía, despliega su sigilo en la oscuridad, mientras acecha como una sombra, implacable y sigilosa, lista para la acción.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/agente2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Jett</h5>
+          <p>Audaz duelista coreana, se lanza con velocidad, dominando los cielos, su hoja corta el viento, una fuerza imparable en la batalla, ágil y letal.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/agente3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Viper</h5>
+          <p>la científica estadounidense, manipula químicos mortales, estrangulando el campo de batalla con veneno, una amenaza tóxica envuelta en verde venganza.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/agente4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Yoru</h5>
+          <p>Misterioso agente japonés, se desvanece en las sombras, desafiando la realidad, un fantasma entre mundos, siempre eludiendo la captura.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/agente5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Omen</h5>
+          <p>Enigmático manipulador de sombras, teje la oscuridad, su presencia desconcertante provoca temor, una amenaza etérea acechando en la penumbra.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/agente6.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Reyna</h5>
+          <p>Sedienta depredadora mexicana, devora la vida de sus enemigos, su mirada ardiente proyecta dominio, una fuerza imparable y voraz.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="galeriacontenedor" id="galeria">
+    <section>    
+        <img src="Imagenes/mapa1.jpg" alt="IMG1">
+        <img src="Imagenes/mapa2.jpg" alt="IMG2">
+        <img src="Imagenes/mapa3.jpg" alt="IMG3">
+        <img src="Imagenes/mapa4.jpg" alt="IMG4">
+        <img src="Imagenes/mapa5.jpg" alt="IMG5">
+        <img src="Imagenes/mapa6.jpg" alt="IMG6">
+    </section>
+</div>
+
+<div class="cartas">
+<div class="card" style="width: 18rem;">
+  <img src="Imagenes/crosshair1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tenz Crosshair</h5>
+    <p>Valorant Masters 2024 Winner</p>
+    <a class="btn btn-primary" data-text="0;s;1;P;c;5;h;0;m;1;0l;4;0o;2;0a;1;0f;0;1b;0;S;c;4;o;1" id="copiartexto">Copiar Crosshair</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="Imagenes/crosshair2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Yay Crosshair</h5>
+    <p>Valorant champions 2022 MVP</p>
+    <a class="btn btn-primary" data-text="0;P;h;0;f;0;0l;4;0o;0;0a;1;0f;0;1b;0" id="copiartexto2">Copiar Codigo</a>
+  </div>
+</div>
+</div>
+
+
+<script src="codigos.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
